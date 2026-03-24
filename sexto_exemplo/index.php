@@ -1,5 +1,5 @@
 <?php
-require 'conexao.php';
+require '../config/conexao.php';
 
 // Recebendo filtros
 $descricao = $_GET['descricao'] ?? '';
