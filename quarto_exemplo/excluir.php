@@ -1,5 +1,5 @@
 <?php
-require 'conexao.php';
+require '../config/conexao.php'
 
 if (!empty($_GET['id'])) {
     $stmt = $pdo->prepare("DELETE FROM produtos WHERE id = ?");

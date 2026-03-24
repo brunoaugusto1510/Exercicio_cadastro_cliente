@@ -1,5 +1,5 @@
 <?php
-require 'conexao.php';
+require '../config/conexao.php'
 $stmt = $pdo->query("SELECT * FROM produtos ORDER BY descricao");
 $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>

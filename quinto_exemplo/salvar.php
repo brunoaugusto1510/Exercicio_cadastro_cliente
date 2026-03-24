@@ -1,5 +1,5 @@
 <?php
-require 'conexao.php';
+require '../config/conexao.php';
 
 $id = $_POST['id'];
 $descricao = $_POST['descricao'];
