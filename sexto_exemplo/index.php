@@ -91,7 +91,14 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 			
 			<label>
 			Categoria:
-			<input type="text" name="categoria" value="<?= htmlspecialchars($categoria) ?>">
+            <select name="id_categoria">
+                <option value="">Todas as categorias</option>
+                    <?php foreach ($categorias as $c): ?>
+                        <option value="<?= $c['id'] ?>" <?= (isset($_GET['id_categoria']) && $_GET['id_categoria'] == $c['id']) ? 'selected' : '' ?>>
+                            <?= htmlspecialchars($c['nome_categoria']) ?>
+                        </option>
+                    <?php endforeach; ?>
+            </select>
 			</label>
 
 			<button type="submit" class="botao filtrar">Filtrar</button>
