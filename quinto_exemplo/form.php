@@ -27,7 +27,7 @@ $categorias = $stmtCategorias->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <title><?= $produto['id'] ? 'Editar' : 'Incluir' ?> Produto</title>
-    <link rel="stylesheet" href="estilo_form.css">
+    <link rel="stylesheet" href="../css/estilo_form.css">
 </head>
 <body>
 
