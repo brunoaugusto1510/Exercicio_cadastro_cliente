@@ -1,5 +1,5 @@
 <?php
-require '../config/conexao.php'
+require '../config/conexao.php';
 $stmt = $pdo->query("SELECT * FROM produtos ORDER BY descricao");
 $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -9,7 +9,7 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <title>Lista de Produtos</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
 

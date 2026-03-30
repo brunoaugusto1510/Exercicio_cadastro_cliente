@@ -32,7 +32,7 @@ try {
 <head>
     <meta charset="UTF-8">
     <title>Editar Cliente</title>
-	<link rel="stylesheet" href="style_editar.css">
+	<link rel="stylesheet" href="../css/style_editar.css">
 </head>
 <body>
     <!--h1>Editar Cliente</h1-->
