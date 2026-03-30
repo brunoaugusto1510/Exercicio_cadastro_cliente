@@ -1,5 +1,5 @@
 <?php
-require '../config/conexao.php'
+require '../config/conexao.php';
 $produto = ['id' => '', 'descricao' => '', 'qtde_estoque' => '', 'preco' => ''];
 
 if (!empty($_GET['id'])) {
